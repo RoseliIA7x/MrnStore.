@@ -94,7 +94,7 @@
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#inicio" class="text-gray-600 hover:text-primary transition font-medium">Início</a>
                     <a href="#lacrados" class="text-gray-600 hover:text-primary transition font-medium">Lacrados</a>
-                    <a href="#lacrados" class="text-gray-600 hover:text-primary transition font-medium" onclick="switchTab('seminovos'); return false;">Seminovos</a>
+                    <a href="#lacrados" onclick="setTimeout(() => { document.querySelector('#btn-seminovos').click(); }, 500); return true;" class="text-gray-600 hover:text-primary transition font-medium">Seminovos</a>
                     <a href="#grupo-vip" class="text-gray-600 hover:text-primary transition font-medium">Grupo VIP</a>
                     <a href="#como-funciona" class="text-gray-600 hover:text-primary transition font-medium">Como Funciona</a>
                     <a href="https://wa.me/5586994985344?text=Ol%C3%A1%2C%20quero%20comprar%20meu%20iphone" class="bg-accent text-white px-6 py-2 rounded-full font-semibold hover:bg-green-600 transition flex items-center gap-2 pulse-animation">
@@ -114,7 +114,7 @@
             <div class="px-4 pt-2 pb-6 space-y-2">
                 <a href="#inicio" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Início</a>
                 <a href="#lacrados" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Lacrados</a>
-                <a href="#lacrados" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-lg" onclick="switchTab('seminovos')">Seminovos</a>
+                <a href="#lacrados" onclick="setTimeout(() => { document.querySelector('#btn-seminovos').click(); toggleMenu(); }, 500); return true;" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Seminovos</a>
                 <a href="#grupo-vip" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-lg">Grupo VIP</a>
                 <a href="https://wa.me/5586994985344?text=Ol%C3%A1%2C%20quero%20comprar%20meu%20iphone" class="block px-3 py-2 text-accent font-semibold">Falar no WhatsApp</a>
             </div>
@@ -826,7 +826,7 @@
                     <ul class="space-y-2">
                         <li><a href="#inicio" class="hover:text-white transition">Início</a></li>
                         <li><a href="#lacrados" class="hover:text-white transition">iPhones Lacrados</a></li>
-                        <li><a href="#lacrados" class="hover:text-white transition" onclick="switchTab('seminovos')">Seminovos</a></li>
+                        <li><a href="#lacrados" onclick="setTimeout(() => { document.querySelector('#btn-seminovos').click(); }, 500); return true;" class="hover:text-white transition">Seminovos</a></li>
                         <li><a href="#grupo-vip" class="hover:text-white transition">Grupo VIP</a></li>
                     </ul>
                 </div>
